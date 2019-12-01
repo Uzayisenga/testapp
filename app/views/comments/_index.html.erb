@@ -1,0 +1,13 @@
+<ul>
+  <% comments.each do |comment| %>
+    <% if comment.id.present? %>
+    <div id="comments_<%= comment.id %>" class="row single-comment">
+      <td><p><%= comment.name %></p></td>&nbsp;&nbsp;
+      <td> <p><%= comment.description %></p></td>
+<%= button_to(publisher_comment_path(@publisher.id,comment.id), {method: :delete, remote: true, class:"btn btn-danger delete-comment-button pull-right",value:'delete', params:{id: comment.id, publisher: publisher.id}} ) do%>
+      <i class="glyphicon glyphicon-trash"></i>
+    <% end %>
+</div>
+    <% end %>
+  <% end %>
+</ul>

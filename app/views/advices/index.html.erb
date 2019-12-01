@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Advices</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Field in</th>
+      <th>Advice</th>
+      <th>Email</th>
+      <th>Time</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @advices.each do |advice| %>
+      <tr>
+        <td><%= advice.name %></td>
+        <td><%= advice.field_in %></td>
+        <td><%= advice.advice %></td>
+        <td><%= advice.email %></td>
+        <td><%= advice.time %></td>
+        <td><%= link_to 'Show', advice %></td>
+        <td><%= link_to 'Edit', edit_advice_path(advice) %></td>
+        <td><%= link_to 'Destroy', advice, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Advice', new_advice_path %>

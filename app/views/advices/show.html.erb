@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @advice.name %>
+</p>
+
+<p>
+  <strong>Field in:</strong>
+  <%= @advice.field_in %>
+</p>
+
+<p>
+  <strong>Advice:</strong>
+  <%= @advice.advice %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @advice.email %>
+</p>
+
+<p>
+  <strong>Time:</strong>
+  <%= @advice.time %>
+</p>
+
+<%= link_to 'Edit', edit_advice_path(@advice) %> |
+<%= link_to 'Back', advices_path %>

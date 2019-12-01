@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Get Free Consultants</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Address</th>
+      <th>Dob</th>
+      <th>Street name</th>
+      <th>District</th>
+      <th>Sector</th>
+      <th>Cell</th>
+      <th>How did you us</th>
+      <th>Height</th>
+      <th>Weight</th>
+      <th>Gender</th>
+      <th>Concern</th>
+      <th>Family history</th>
+      <th>Subcribe article</th>
+      <th>Time</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @get_free_consultants.each do |get_free_consultant| %>
+      <tr>
+        <td><%= get_free_consultant.name %></td>
+        <td><%= get_free_consultant.email %></td>
+        <td><%= get_free_consultant.phone %></td>
+        <td><%= get_free_consultant.address %></td>
+        <td><%= get_free_consultant.dob %></td>
+        <td><%= get_free_consultant.street_name %></td>
+        <td><%= get_free_consultant.district %></td>
+        <td><%= get_free_consultant.sector %></td>
+        <td><%= get_free_consultant.cell %></td>
+        <td><%= get_free_consultant.how_did_you_us %></td>
+        <td><%= get_free_consultant.height %></td>
+        <td><%= get_free_consultant.weight %></td>
+        <td><%= get_free_consultant.gender %></td>
+        <td><%= get_free_consultant.concern %></td>
+        <td><%= get_free_consultant.family_history %></td>
+        <td><%= get_free_consultant.subcribe_article %></td>
+        <td><%= get_free_consultant.time %></td>
+        <td><%= link_to 'Show', get_free_consultant %></td>
+        <td><%= link_to 'Edit', edit_get_free_consultant_path(get_free_consultant) %></td>
+        <td><%= link_to 'Destroy', get_free_consultant, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Get Free Consultant', new_get_free_consultant_path %>

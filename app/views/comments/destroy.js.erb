@@ -1,0 +1,4 @@
+$('#comments_<%= @comment.id %>').remove();
+in views/index.js.erb
+$("#comments_area").html("<%= j(render 'comments/index', { comments: @comment.publisher.comments, publisher: @comment.publisher }) %>")
+$("textarea").val('')

@@ -1,0 +1,102 @@
+<%= form_with(model: get_free_consultant, local: true) do |form| %>
+  <% if get_free_consultant.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(get_free_consultant.errors.count, "error") %> prohibited this get_free_consultant from being saved:</h2>
+
+      <ul>
+        <% get_free_consultant.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :phone %>
+    <%= form.text_field :phone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :address %>
+    <%= form.text_field :address %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dob %>
+    <%= form.date_select :dob %>
+  </div>
+
+  <div class="field">
+    <%= form.label :street_name %>
+    <%= form.text_area :street_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :district %>
+    <%= form.text_area :district %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sector %>
+    <%= form.text_area :sector %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cell %>
+    <%= form.text_area :cell %>
+  </div>
+
+  <div class="field">
+    <%= form.label :how_did_you_us %>
+    <%= form.text_field :how_did_you_us %>
+  </div>
+
+  <div class="field">
+    <%= form.label :height %>
+    <%= form.number_field :height %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weight %>
+    <%= form.number_field :weight %>
+  </div>
+
+  <div class="field">
+    <%= form.label :gender %>
+    <%= form.text_area :gender %>
+  </div>
+
+  <div class="field">
+    <%= form.label :concern %>
+    <%= form.text_field :concern %>
+  </div>
+
+  <div class="field">
+    <%= form.label :family_history %>
+    <%= form.text_field :family_history %>
+  </div>
+
+  <div class="field">
+    <%= form.label :subcribe_article %>
+    <%= form.text_field :subcribe_article %>
+  </div>
+
+  <div class="field">
+    <%= form.label :time %>
+    <%= form.date_select :time %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

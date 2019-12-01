@@ -1,0 +1,2 @@
+class GetFreeConsultant < ApplicationRecord
+end

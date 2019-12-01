@@ -1,0 +1,81 @@
+<%= form_with(model: docteur, local: true, html: { multipart: true } ) do |form| %>
+  <% if docteur.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(docteur.errors.count, "error") %> prohibited this docteur from being saved:</h2>
+
+      <ul>
+        <% docteur.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :names %>
+    <%= form.text_field :names %>
+  </div>
+
+  <div class="field">
+    <%= form.label :field_in %>
+    <%= form.text_field :field_in %>
+  </div>
+
+  <div class="field">
+  <%= form.label :image %>
+  <%= form.file_field :image %>
+</div>
+
+  <div class="field">
+    <%= form.label :upload_cv %>
+    <%= form.file_field :upload_cv %>
+  </div>
+
+  <div class="field">
+    <%= form.label :upload_diploma %>
+    <%= form.file_field :upload_diploma %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :availability %>
+    <%= form.text_field :availability %>
+  </div>
+
+  <div class="field">
+    <%= form.label :telephone %>
+    <%= form.text_field :telephone %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+  <%= yield %>
+  <% if notice %>
+  <p class="alert alert-success"><%= notice %></p>
+<% end %>
+<% if alert %>
+  <p class="alert alert-danger"><%= alert %></p>
+<% end %><br>
+
+<p class="navbar-text float-right">
+<% if user_signed_in? %>
+  Logged in as <strong><%= current_user.email %></strong>.
+  <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
+  <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+<% else %>
+  <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
+  <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+<% end %>
+</p>
+<ul class="navbar-nav mr-auto">
+    <li class="nav-item active">
+      <a class="nav-link" href="/index">Ideas</a>
+    </li>
+    ...
+  </ul>
+<% end %>

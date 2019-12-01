@@ -1,0 +1,2 @@
+module GetFreeConsultantsHelper
+end

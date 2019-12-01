@@ -1,0 +1,13 @@
+<div class="card">
+  <%= image_tag @docteur.image , class:'image'%>
+  <div class="card-body mt-3"
+  <h1><%= @docteur.names %></h1>
+  <p>
+  <%= @docteur.telephone %><br>
+  <%= @docteur.email %><br>
+  <%= @docteur.availability %>
+  </p>
+  </div
+  <p class="card-footer">
+  <%= link_to 'Back', docteurs_path, class:'btn btn-dark' %></p>
+</div>

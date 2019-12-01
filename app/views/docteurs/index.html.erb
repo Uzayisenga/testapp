@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<h1> Welcome to Docteurs Page</h1><br><br>
+
+<% @docteurs.each do |docteur| %>
+  <div class="row">
+  <div class = "col-sm-4">
+  <% if docteur.image.present? %>
+  <%= image_tag docteur.image , class:'image'%>
+  <% end %>
+  <div class="card-body mt-3"
+  <h1><%= docteur.names %></h1>
+  <p>
+  <%= docteur.telephone %><br>
+  <%= docteur.email %><br>
+  <%= docteur.availability %>
+  </p>
+  </div
+  <p class="card-footer">
+  <%= link_to 'Back', docteurs_path, class:'btn btn-dark' %></p>
+</div>
+<% end %>
+</div>
+</div>
+<%= link_to 'New Docteur', new_docteur_path %>
+
