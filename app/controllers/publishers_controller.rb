@@ -22,14 +22,10 @@ class PublishersController < ApplicationController
   def create
     @publisher = Publisher.new(publisher_params)
 
-    respond_to do |format|
       if @publisher.save
-        format.html { redirect_to @publisher, notice: 'Publisher was successfully created.' }
-        format.json { render :show, status: :created, location: @publisher }
+         redirect_to @publisher, notice: 'Publisher was successfully created.' 
       else
-        format.html { render :new }
-        format.json { render json: @publisher.errors, status: :unprocessable_entity }
-      end
+         render :new 
     end
   end
 

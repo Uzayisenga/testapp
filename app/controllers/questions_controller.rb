@@ -18,14 +18,13 @@ class QuestionsController < ApplicationController
 
   def create
     flash[:notice] = "Save the world by Giving life to helpless"
-    redirect_to @show
+    redirect_to @user
     @question = Question.new(question_params)
 
-    
       if @question.save
-        redirect_to @question, notice: 'Thank you for asking!!! the doctors will help.'
+         redirect_to @question, notice: 'Thank you for asking!!! the doctors will help.'
       else
-         render :new 
+        render :new 
     end
   end
 
@@ -40,9 +39,9 @@ class QuestionsController < ApplicationController
  
   def destroy
     @question.destroy
-    
-      format.html { redirect_to questions_url, notice: 'Question was successfully destroyed.' 
+      redirect_to questions_url, notice: 'Question was successfully destroyed.' 
   end
+
 
   private
     def set_question
