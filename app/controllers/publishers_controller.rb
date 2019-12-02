@@ -1,6 +1,6 @@
 class PublishersController < ApplicationController
   before_action :authenticate_user!, :except => [:show]
-  before_action :publisher, only: [:show, :edit, :update, :destroy]
+  before_action :set_publisher, only: [:show, :edit, :update, :destroy]
   protect_from_forgery with: :exception
 
   def index
