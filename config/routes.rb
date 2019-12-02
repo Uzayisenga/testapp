@@ -1,10 +1,7 @@
 Rails.application.routes.draw do
  devise_for :users
   resources :videos
-  get 'videos/show'
-  get '/videos/:id', to: 'posts#show'
-  get 'publisher/create'
-  get 'publisher/store'
+  resources :publishers
   resources :get_free_consultants
   resources :publishers do
     resources :comments
@@ -12,7 +9,7 @@ Rails.application.routes.draw do
   resources :questions
   resources :advices
   resources :docteurs
-  get 'welcome/index'
+  resources :welcome
   root 'welcome#index'
  
   resources :doctors
