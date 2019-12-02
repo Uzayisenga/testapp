@@ -5,6 +5,7 @@ ruby '2.6.4'
 gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
 gem 'carrierwave'
 gem 'devise'
+gem 'seed_dump'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.1'

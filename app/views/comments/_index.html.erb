@@ -4,7 +4,8 @@
     <div id="comments_<%= comment.id %>" class="row single-comment">
       <td><p><%= comment.name %></p></td>&nbsp;&nbsp;
       <td> <p><%= comment.description %></p></td>
-<%= button_to(publisher_comment_path(@publisher.id,comment.id), {method: :delete, remote: true, style:" width:40px",value:'delete', params:{id: comment.id, publisher: publisher.id}} ) do%>
+      <div id="comment_<%= comment.id %>" class="row single-comment vertical-align">
+      <%= button_to(publisher_comment_path(@publisher.id,comment.id), {method: :delete, remote: true, style:" width:40px",value:'delete', params:{id: comment.id, publisher: publisher.id}} ) do%>
       <i class="glyphicon glyphicon-trash" ></i>
     <% end %>
 </div>

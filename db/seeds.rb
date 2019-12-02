@@ -5,9 +5,19 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+User.create!(
 
-Docteur create(
-    names: "AminabuteraKamanzi",
+  names: "amina",
+  email: "amina@gmail.com",
+  user_type: "admin",
+  password: "123456",
+  password_confirmation: "123456"
+  #watched_on: 5.days.ago
+)
+
+
+Docteur.create(
+    names: "Amina",
     field_in: "nutriest",
     upload_cv: "god.docx",
     upload_diploma: "gic.docx",
@@ -16,29 +26,29 @@ Docteur create(
     telephone: "0788838260"
 )
 
-Question create(
+Question.create(
     name: "Alice",
     question: "What is important of nutrietion",
     email: "amiana@gmail.com",
     time: "11.11.2019"
 )
 
-Publisher create(
+Publisher.create(
     name: "Dr. Amina",
     publish: "HAppiness bring faith",
     email: "aminadabu@gmail.com",
     time: "12.10.2019"
 )
-Video create(
+Video.create(
     title: "Nutrition",
     file: "malnutrition.png"
 )
-Comments create(
+Comments.create(
     description: "the article",
     publisher: "hapiness",
     name: "Habinessa"
 )
-Get_free_consultant create(
+Get_free_consultant.create(
     name: "Kamanzi",
     email: "kamanzi@gmail.com",
     phone: "0788824356",

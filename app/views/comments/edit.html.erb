@@ -1,6 +1,4 @@
-<h1>Editing Comment</h1>
-
-<%= render 'form', comment: @comment %>
-
-<%= link_to 'Show', @comment %> |
-<%= link_to 'Back', comments_path %>
+<%= form_for ([@publisher, @comment]) do |f| %>
+    <%= f.text_area :description, class:"single-input"%>
+    <%= f.submit "publisher comment", class:"genric-btn info-border circle" %>
+<%end%>

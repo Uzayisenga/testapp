@@ -1,29 +1,6 @@
-<%= form_with(model: [publisher, comment]) do |form| %>
-  <% if comment.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(comment.errors.count, "error") %> prohibited this comment from being saved:</h2>
-
-      <ul>
-        <% comment.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="field">
-    <%= form.label :description %>
-    <%= form.text_area :description %>
+<%= form_for ([@publisher, @publisher.comments.build]) do |f| %>
+  <div class="form-group">
+  <%= f.text_area :description, class:"single-input", placeholder:"enter comment", class: "form-control"%>
+  <%= f.submit " comment", class:"genric-btn info-border circle", class: "btn btn-primary"  %>
   </div>
-
-  
-
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
-<% end %>
+<%end%>
