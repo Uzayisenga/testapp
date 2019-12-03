@@ -14,6 +14,240 @@ User.create!(
   password_confirmation: "123456"
   #watched_on: 5.days.ago
 )
+User.create!(
+
+  names: "amina",
+  email: "amina@gmail.com",
+  user_type: "admin",
+  password: "123456",
+  password_confirmation: "123456"
+  #watched_on: 5.days.ago
+)
+User.create!(
+
+  names: "amina",
+  email: "amina@gmail.com",
+  user_type: "admin",
+  password: "123456",
+  password_confirmation: "123456"
+  #watched_on: 5.days.ago
+)
+User.create!(
+
+  names: "amina",
+  email: "amina@gmail.com",
+  user_type: "admin",
+  password: "123456",
+  password_confirmation: "123456"
+  #watched_on: 5.days.ago
+)
+User.create!(
+
+  names: "amina",
+  email: "amina@gmail.com",
+  user_type: "admin",
+  password: "123456",
+  password_confirmation: "123456"
+  #watched_on: 5.days.ago
+)
+User.create!(
+
+  names: "amina",
+  email: "amina@gmail.com",
+  user_type: "admin",
+  password: "123456",
+  password_confirmation: "123456"
+  #watched_on: 5.days.ago
+)
+User.create!(
+
+  names: "amina",
+  email: "amina@gmail.com",
+  user_type: "admin",
+  password: "123456",
+  password_confirmation: "123456"
+  #watched_on: 5.days.ago
+)
+User.create!(
+
+  names: "amina",
+  email: "amina@gmail.com",
+  user_type: "admin",
+  password: "123456",
+  password_confirmation: "123456"
+  #watched_on: 5.days.ago
+)
+User.create!(
+
+  names: "amina",
+  email: "amina@gmail.com",
+  user_type: "admin",
+  password: "123456",
+  password_confirmation: "123456"
+  #watched_on: 5.days.ago
+)
+User.create!(
+
+  names: "amina",
+  email: "amina@gmail.com",
+  user_type: "admin",
+  password: "123456",
+  password_confirmation: "123456"
+  #watched_on: 5.days.ago
+)
+User.create!(
+
+  names: "amina",
+  email: "amina@gmail.com",
+  user_type: "admin",
+  password: "123456",
+  password_confirmation: "123456"
+  #watched_on: 5.days.ago
+)
+User.create!(
+
+  names: "amina",
+  email: "amina@gmail.com",
+  user_type: "admin",
+  password: "123456",
+  password_confirmation: "123456"
+  #watched_on: 5.days.ago
+)
+User.create!(
+
+  names: "amina",
+  email: "amina@gmail.com",
+  user_type: "admin",
+  password: "123456",
+  password_confirmation: "123456"
+  #watched_on: 5.days.ago
+)
+User.create!(
+
+  names: "amina",
+  email: "amina@gmail.com",
+  user_type: "admin",
+  password: "123456",
+  password_confirmation: "123456"
+  #watched_on: 5.days.ago
+)
+User.create!(
+
+  names: "amina",
+  email: "amina@gmail.com",
+  user_type: "admin",
+  password: "123456",
+  password_confirmation: "123456"
+  #watched_on: 5.days.ago
+)
+User.create!(
+
+  names: "amina",
+  email: "amina@gmail.com",
+  user_type: "admin",
+  password: "123456",
+  password_confirmation: "123456"
+  #watched_on: 5.days.ago
+)
+User.create!(
+
+  names: "amina",
+  email: "amina@gmail.com",
+  user_type: "admin",
+  password: "123456",
+  password_confirmation: "123456"
+  #watched_on: 5.days.ago
+)
+User.create!(
+
+  names: "amina",
+  email: "amina@gmail.com",
+  user_type: "admin",
+  password: "123456",
+  password_confirmation: "123456"
+  #watched_on: 5.days.ago
+)
+User.create!(
+
+  names: "amina",
+  email: "amina@gmail.com",
+  user_type: "admin",
+  password: "123456",
+  password_confirmation: "123456"
+  #watched_on: 5.days.ago
+)
+User.create!(
+
+  names: "amina",
+  email: "amina@gmail.com",
+  user_type: "admin",
+  password: "123456",
+  password_confirmation: "123456"
+  #watched_on: 5.days.ago
+)
+User.create!(
+
+  names: "amina",
+  email: "amina@gmail.com",
+  user_type: "admin",
+  password: "123456",
+  password_confirmation: "123456"
+  #watched_on: 5.days.ago
+)
+User.create!(
+
+  names: "amina",
+  email: "amina@gmail.com",
+  user_type: "admin",
+  password: "123456",
+  password_confirmation: "123456"
+  #watched_on: 5.days.ago
+)
+User.create!(
+
+  names: "amina",
+  email: "amina@gmail.com",
+  user_type: "admin",
+  password: "123456",
+  password_confirmation: "123456"
+  #watched_on: 5.days.ago
+)
+User.create!(
+
+  names: "amina",
+  email: "amina@gmail.com",
+  user_type: "admin",
+  password: "123456",
+  password_confirmation: "123456"
+  #watched_on: 5.days.ago
+)
+User.create!(
+
+  names: "amina",
+  email: "amina@gmail.com",
+  user_type: "admin",
+  password: "123456",
+  password_confirmation: "123456"
+  #watched_on: 5.days.ago
+)
+User.create!(
+
+  names: "amina",
+  email: "amina@gmail.com",
+  user_type: "admin",
+  password: "123456",
+  password_confirmation: "123456"
+  #watched_on: 5.days.ago
+)
+User.create!(
+
+  names: "amina",
+  email: "amina@gmail.com",
+  user_type: "admin",
+  password: "123456",
+  password_confirmation: "123456"
+  #watched_on: 5.days.ago
+)
 
 
 Docteur.create(
